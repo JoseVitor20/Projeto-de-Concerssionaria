@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.centro{
+    padding: 0 4%;
+    user-select: none;
+}
+
+.compensar{
+    width: 100%;
+    height:115px;
+    background-color:black;
+}
+
+
+/* sectionContato1 */
+*{
+    .sectionContato1{}
+
+    .sectionContato1{
+        width:100%;
+        float:initial;
+        clear: both;
+        position: relative;
+    }
+
+    .imagemContato{
+        width:100%;
+        height:100%;
+        margin-bottom: -10px;
+        overflow: hidden;
+    }
+
+    .imagemContato img{
+        width: 100%;
+        height:100%;
+        transform:scale(1.010);
+    }
+
+    .faixaAzul{
+        width: 100%;
+        float:initial;
+        clear: both;
+        position: absolute;
+        top:15%;
+        padding:25px 0px;
+        background-image:linear-gradient(var(--cor-gradiente3));
+        text-align:center;
+        overflow: hidden;
+    }
+
+    .centrarFaixa{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:center;
+    }
+
+    .faixaAzul h1{
+        text-transform:uppercase;
+        font-size:var(--fonte-60px);
+        font-weight: bold;
+        color: white;
+        padding-top:15px;
+    }
+
+    .retangulo{
+        width: auto;
+        height: auto;
+        display: flex;
+    }
+
+    .retangulo div{
+        width: 40px;
+        height: 60px;
+        background-color: white;
+        margin: 0px 15px;
+        transform:skew(-40deg);
+    }
+
+    @media screen and (max-width:1475px){
+    
+        .faixaAzul h1{
+            font-size:var(--fonte-50px);
+            padding-top:10px;
+        }
+
+        .retangulo div{
+            width: 30px;
+            height: 40px;
+        }
+    
+    }
+
+    @media screen and (max-width:1175px){
+        .faixaAzul h1{
+            font-size:var(--fonte-35px);
+        }
+
+        .retangulo div{
+            width: 30px;
+            height: 35px;
+            margin: 0px 5px;
+        }
+    }
+
+    @media screen and (max-width:1010px){
+
+        .faixaAzul h1{
+            font-size:var(--fonte-30px);
+            padding-top: 10px;
+        }
+
+        .retangulo div{
+            width: 25px;
+            height: 35px;
+            margin: 0px 7px;
+        }
+    }
+
+
+    @media screen and (max-width:850px){
+
+        .compensar{
+            height:80px;
+        }
+
+        .faixaAzul h1{
+            font-size:var(--fonte-25px);
+            padding-top:5px;
+            padding: 0px 10px;
+        }
+        
+        .faixaAzul{
+            padding: 10px 0;
+            top:10%;
+        }
+
+        .faixaAzul h1{
+            font-size:var(--fonte-30px);
+            padding-top:10px;
+        }
+
+        .retangulo div{
+            width: 20px;
+            height: 30px;
+            margin: 0px 4px;
+        }
+
+    }
+
+    @media screen and (max-width:660px){
+
+        .faixaAzul{
+            padding: 10px 0;
+        }
+
+        .faixaAzul h1{
+            font-size:var(--fonte-25px);
+            padding-top:5px;
+        }
+
+        .retangulo div{
+            width: 20px;
+            height: 30px;
+            margin: 0px 4px;
+        }
+
+    }
+
+    @media screen and (max-width:590px){
+
+        .faixaAzul h1{
+            font-size:var(--fonte-20px);
+            padding-top:5px;
+        }
+
+        .retangulo div{
+            width: 15px;
+            height: 25px;
+            margin: 0px 4px;
+        }
+
+    }
+
+    @media screen and (max-width: 502px){
+        .retangulo div{
+            width: 15px;
+            height: 20px;
+            margin: 0px 3px;
+        }
+    }
+
+}
+
+/* sectionContato2 */
+*{
+    .sectionContato2{}
+
+    .sectionContato2{
+        width:100%;
+        float: initial;
+        clear: both;
+        padding:30px 0px;
+        background-image:linear-gradient(var(--cor-gradiente2));
+    }
+
+    .entrarOUlogar{
+        width:100%;
+        height: inherit;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        color:white;
+        text-transform:uppercase;
+    }
+
+    .OpcoesDEentrar{
+        width:600px;
+        height:45px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-top: 30px;
+    }    
+
+    .OpcoesDEentrar a{
+        width: 45%;
+        height: inherit;
+        border-radius:20px;
+        text-align: center;
+        outline:none;
+        border:none;
+        background-image:linear-gradient(var(--cor-gradiente3));
+        cursor: pointer;
+        color:white;
+        text-transform:uppercase;
+        font-size:var(--fonte-20px);
+        font-weight:bold;
+        padding-top: 15px;
+        text-decoration: none;
+    }
+
+    .OpcoesDEentrar button:hover{
+        transform: scale(1.1);
+        background-image:linear-gradient(blue,blue);    }
+
+    @media screen and (max-width: 670px){
+
+        .entrarOUlogar{
+            font-size: var(--fonte-14px);
+        }
+
+            
+        .OpcoesDEentrar{
+            width:400px;
+        }  
+
+        .OpcoesDEentrar button{
+            font-size:var(--fonte-14px);
+        }
+    }
+
+}
+
+/* formularioDeAtendimento */
+*{
+
+    .formularioDeAtendimento{}
+
+    .atendimanto{
+        width:100%;
+        float:initial;
+        clear:both;      
+        position: relative;
+    }
+
+    .escuro{
+        width:100%;
+        height:100%;
+        background-color: black;
+        position: absolute;
+        opacity: .5;
+        z-index: 4;
+    }
+
+    .formAtendimento{
+        width:100%;
+        height:100%;
+        display:flex;
+        justify-content:center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        background-image:url('../IMAGENS/Gestão\ de\ clientes.jpg');
+        padding: 100px 0;
+        position: relative;
+    }
+
+    .formularioDeAtendimento{
+        min-width: 435px;
+        width:35%;
+        float:initial;
+        clear: both;
+        display:flex;
+        flex-direction:column;
+        padding: 20px;
+        text-align: center;
+        background-image:linear-gradient(90deg, #000000a2, #7373736e); 
+        position: relative;
+        z-index: 6;
+    }
+
+    .formularioDeAtendimento h3{
+        color: white;
+        text-transform:capitalize;
+        text-align:left;
+    }
+
+    .formularioDeAtendimento input{
+        margin-bottom:15px;
+        padding: 10px;
+        outline: none;
+        border-radius: 7px;
+        border: none;
+        outline: none;
+    }
+
+    .formularioDeAtendimento textarea{
+        height: 100px;
+        resize:none;
+        padding: 10px;
+        margin-bottom:20px;
+        outline: none;
+    }
+
+    .formularioDeAtendimento button{
+        width:150px;
+        line-height:40px;
+        border-radius: 20px;
+        outline:none;
+        border:none;
+        background-image:linear-gradient(var(--cor-gradiente3));
+        font-size:var(--fonte-20px);
+        color:white;
+        font-weight: bold;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+
+    .formularioDeAtendimento button:hover{
+        transform: scale(1.1);
+        background-image:linear-gradient(blue,blue);    }
+
+}   

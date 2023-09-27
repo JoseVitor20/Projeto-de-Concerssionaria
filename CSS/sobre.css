@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .sectionSobre1 */
+* {
+    .sectionSobre1 {}
+
+    .sectionSobre1 {
+        width: 100%;
+        float:initial;
+        clear: both;
+        position: relative;
+    }
+
+    .imagem-mecanico {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .imagem-mecanico {
+        width: 100%;
+        height: 100%;
+        height:700px;
+        background-image: url('../IMAGENS/Imagem-de-mecanico.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        position: relative;
+    }
+
+    .fundo-preto {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: black;
+        top: 0;
+        opacity: .5;
+    }
+
+    .textoSobre {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+    }
+
+    .textoCentro {
+        width: 600px;
+        height: 400px;
+        text-align: justify;
+    }
+
+    .textoCentro h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: var(--fonte-30px);
+        padding: 20px 0px;
+    }
+
+    .textoCentro p {
+        font-size: var(--fonte-20px);
+        line-height: 25px;
+    }
+
+
+    
+    @media screen and (max-width: 850px){
+        .compensar {
+            top: 80px;
+        }
+    }    
+
+    @media screen and (max-width: 750px) {
+
+        .textoSobre {
+            height: auto;
+            position: relative;
+            top: 100%;
+            background-image: linear-gradient(var(--cor-gradiente2));
+            align-items: start;
+            padding-top: 30px;
+            padding-bottom: 40px;
+            margin-bottom: -35px;
+        }
+
+        .imagem-mecanico {
+            min-width: 100%;
+            min-height: 50%;
+            height: 550px;
+            background-size: 100% 80%;
+            background-size: 100% 80%;
+        }
+
+        .textoCentro h2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: var(--fonte-25px);
+            padding: 10px 0px;
+        }
+
+        .textoCentro {
+            width: 600px;
+            height: 300px;
+            text-align: justify;
+            margin-bottom: 90px;
+        }
+
+        .textoCentro p {
+            font-size: var(--fonte-16px);
+            line-height: 25px;
+        }
+
+    }
+}
+
+/* informacoesEdilema */
+* {
+    .informacoesEdilema{}
+
+    .informacoesEdilema {
+        width: 100%;
+        float: initial;
+        clear: both;
+        background-image: linear-gradient(var(--cor-gradiente2));
+    }
+
+    .sessaoTexto {
+        width: 100%;
+        height: auto;
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .sessaoTexto h2 {
+        font-size: var(--fonte-35px);
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    }
+
+    .sessaoTexto p {
+        font-size: var(--fonte-16px);
+    }
+
+    .sessaoTexto li{
+        font-size: var(--fonte-16px);
+        line-height: 30px;
+        margin-left: 20px;
+    }
+
+    @media screen and (max-width: 850px){
+
+        .sessaoTexto{
+            text-align:justify;
+        }
+
+        .sessaoTexto h2{
+            font-size: var(--fonte-25px);
+        }
+    }
+
+    @media screen and (max-width:700px){
+        .sessaoTexto h2 {
+            padding-bottom: 20px;
+        }
+    
+        .sessaoTexto p {
+            font-size: var(--fonte-16px);
+        }
+    }
+
+}

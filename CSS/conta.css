@@ -1,0 +1,383 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* informações basicas do usuario como, nome, e-mail,foto e botões */
+*{
+    .capaDaconta{}
+
+    .capaDaconta{
+        width:100%;
+        height:100%;
+        background: black;
+        position: relative;
+    }
+
+    .imagemDeFundo{
+        width: 100%;
+        height:100%;
+        background-image: url('../IMAGENS/Ford.jpg');
+        background-position:center;
+        background-size:cover;
+    }
+
+    .pretoDeFundo{
+        width:100%;
+        height:100%;
+        position:absolute;
+        top: 0;
+        opacity: .7;
+        background-color:black;
+    }
+
+    /* nomeEfoto */
+
+    .NomeEfoto{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .imagemConta{
+        width: 300px;
+        float: initial;
+        clear: both;
+    }
+
+    .iamgemCirculo{
+        width:300px;
+        height: 300px;
+        background-image:url('../IMAGENS/pexels-pixabay-220453.jpg');
+        background-position: center;
+        background-size: 100% 100%;
+        border-radius: 100%;
+        position: relative;
+        border: 8px solid rgb(70, 66, 66);
+    }
+
+    .iamgemCirculo img{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 85%;
+        right: -5%;
+        filter: invert();
+        cursor: pointer;
+    }
+
+    .iamgemCirculo img:hover{
+        transform: scale(1.050);
+    }
+
+
+    .informacoesConta{
+        text-align: center;
+        color:white;
+        padding: 30px 0px;
+    }
+
+    .informacoesConta h1{
+        text-transform:capitalize;
+        font-size: var(--fonte-50px);
+        padding-bottom: 20px;
+    }
+
+    .informacoesConta h5{
+        font-size: var(--fonte-20px);
+    }
+
+    .botoesUsuario{
+        margin-bottom: 30px;
+    }
+
+    .botoesUsuario button{
+        padding: 15px 40px;
+        background-color: var(--cor-azul-Escuro);
+        cursor: pointer;
+        color:white;
+        text-transform:uppercase;
+        font-size:var(--fonte-20px);
+        border-radius:40px;
+        border: none;
+        font-weight:bold;
+        margin: 0px 20px;
+    }
+
+    .botoesUsuario button:hover{
+        transform: scale(1.1);
+        background-image:linear-gradient(blue,blue);    }
+
+    .informacoesInportantes{
+        display: flex;
+        color:rgb(71, 71, 237);
+        text-transform:capitalize;
+        font-size: var(--fonte-18px);
+        gap: 20px;
+        cursor: pointer;
+    }
+
+    .informacoesInportantes h4:hover{
+        transform: scale(1.100);
+    }
+
+    @media screen and (max-width:700px ){
+        .imagemConta{
+            width: 200px;
+            float: initial;
+            clear: both;
+        }
+        
+        .iamgemCirculo{
+            width:200px;
+            height: 200px;
+            border: 5px solid rgb(70, 66, 66);
+        }
+        
+        .iamgemCirculo img{
+            width: 25px;
+            height: 25px;
+            top: 85%;
+            right: -5%;
+        }
+
+        .informacoesConta{
+            padding: 20px 0px;
+        }
+        
+        .informacoesConta h1{
+            font-size: var(--fonte-40px);
+            padding-bottom: 20px;
+        }
+        
+        .informacoesConta h5{
+            font-size: var(--fonte-16px);
+        }
+        .botoesUsuario button{
+            padding: 10px 30px;
+            padding-top: 15px;
+            font-size:var(--fonte-18px);
+        }    
+
+        @media screen and (max-width:600px ){
+            
+            .iamgemCirculo img{
+                width: 25px;
+                height: 25px;
+                top: 85%;
+                right: -5%;
+            }
+            
+            .informacoesConta h5{
+                font-size: var(--fonte-14px);
+            }
+            .botoesUsuario button{
+                padding: 10px 10px;
+                padding-top: 15px;
+                margin: 0px 10px;
+                font-size:var(--fonte-16px);
+            }   
+        } 
+            
+    }
+}
+
+/* dadosDaconta */
+*{
+    .dadosDaconta{}
+
+    .dadosDaconta{
+        width: 100%;
+        float: initial;
+        clear: both;
+        background-color: var(--cor-azul-Preto);
+        padding: 2% 0;
+    }
+
+    .dadosDEvendaEcompra{
+        width: 100%;
+        float:initial;
+        clear: both;
+        position: relative;
+        margin: 50px 0px;
+    }
+
+    .dadosDEvendaEcompra h1{
+        color:white;
+        font-size: var(--fonte-40px);
+        text-transform: uppercase;
+        font-style:italic;
+    }
+
+    .dadosDEvendaEcompra h2{
+        display: inline;
+        border-left: 4px solid white;
+        padding-left: 20px;
+        color:white;
+        font-size: var(--fonte-30px);
+    }
+
+    .cartao-Debito-Credito h3{
+        display: inline;
+        font-size: var(--fonte-30px);
+        font-weight: 50;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .cartao-Debito-Credito span{
+        font-size: var(--fonte-30px);
+        line-height: 50px;
+        font-weight: 100;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .mais{
+        padding:10px 30px;
+        border-radius: 20px;
+        padding-top: 15px;
+        font-weight: bold;
+        border:none;
+        background-color:var(--cor-azul-Escuro);
+        color:white;
+        font-size: var(--fonte-18px);
+        margin-left: 20px;
+        text-transform: uppercase;
+    }
+
+    .mais:hover{
+        transform:scale(1.040);
+        border-bottom: 5px solid rgb(128, 128, 187);
+        background-color: #3533cd;
+    }
+    
+    .mostrarMais{
+        width:100%;
+        height: 40px;
+        background-color:var(--cor-cinza-branco);
+        border-radius: 20px;
+        border: none;
+        margin: 30px 0;
+        text-align: center;
+        font-size: var(--fonte-30px);
+        color: white;
+        cursor: pointer;
+    }
+
+    .mostrarMais:hover{
+        transform: scaleY(1.1);
+    }
+
+    .cartao-Debito-Credito{
+        width:100%;
+        float: initial;
+        clear: both;
+        background-color:var(--cor-cinza-claro);
+        color:white;
+        padding: 20px 20px;
+    }
+
+    .informacaoButton {
+        display: block;
+        padding: 15px 40px;
+        border-radius: 40px;
+        padding-top: 20px;
+        font-weight: bold;
+        border:none;
+        background-color:var(--cor-azul-Escuro);
+        color:white;
+        font-size: var(--fonte-25px);
+        text-transform: uppercase;
+        margin: 25px 0px;
+    }
+
+    .informacaoButton:hover{
+        transform: scale(1.1);
+        background-image:linear-gradient(blue,blue);    }
+
+    @media screen and (max-width:760px){
+
+        .dadosDEvendaEcompra h1{
+            font-size: var(--fonte-30px);
+        }
+    
+        .dadosDEvendaEcompra h2{
+            font-size: var(--fonte-20px);
+        }
+    
+        .cartao-Debito-Credito h3{
+            font-size: var(--fonte-20px);
+        }
+    
+        .cartao-Debito-Credito span{
+            font-size: var(--fonte-20px);
+        }
+
+        .mais{
+            padding:5px 20px;
+            border-radius: 20px;
+            padding-top: 10px;
+            font-size: var(--fonte-16px);
+        }
+        .mostrarMais{
+            width:100%;
+            height: 40px;
+            font-size: var(--fonte-30px);
+        }
+        .informacaoButton {
+            padding: 15px 30px;
+            padding-top: 20px;
+            margin: 0 auto;
+            font-size: var(--fonte-25px);
+        }
+    
+    }
+
+    @media screen and (max-width:600px){
+        .dadosDEvendaEcompra h1{
+            font-size: var(--fonte-30px);
+        }
+    
+        .dadosDEvendaEcompra h2{
+            font-size: var(--fonte-16px);
+            border-left: 3px solid white;
+            padding-left: 10px;
+        }
+    
+        .cartao-Debito-Credito h3{
+            font-size: var(--fonte-18px);
+            padding-right: 10px;
+            padding-left: 0px;
+        }
+    
+        .cartao-Debito-Credito span{
+            font-size: var(--fonte-20px);
+        }
+
+        .mais{
+            padding:5px 20px;
+            border-radius: 20px;
+            padding-top: 10px;
+            margin-left: 10px;
+            font-size: var(--fonte-16px);
+        }
+        .mostrarMais{
+            width:100%;
+            height: 40px;
+            font-size: var(--fonte-30px);
+        }
+        .informacaoButton {
+            padding: 15px 30px;
+            padding-top: 20px;
+            font-size: var(--fonte-18px);
+        }
+
+    }
+
+}

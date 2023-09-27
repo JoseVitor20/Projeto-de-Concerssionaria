@@ -1,0 +1,358 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+/* destaque */
+*{
+    .destaque{}
+
+    .destaque{
+        width:100%;
+        float: initial;
+        clear: both;
+        background-image:linear-gradient(var(--cor-gradiente2));
+        padding: 4%;
+        
+    }
+
+    .alinhamento{
+        width: 100%;
+        float: initial;
+        clear: both;
+        border: 1px solid white;
+        padding: 2%;
+    }
+
+    /* imagemEespecificacao     */
+
+    .imagemEespecificacao{
+        width:100%;
+        float: initial;
+        clear: both;
+        max-height: 700px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .imagemDestaque{
+        width: 49%;
+        float: initial;
+        clear:both;
+        position: relative;
+    }
+
+    .imagemDestaque img{
+        width: 100%;
+        height: 100%;
+        max-height: 400px;
+        position: absolute;
+    }
+
+    .especificacao{
+        width: 49%;
+        float: initial;
+        clear: both;
+        color: white;
+    }
+    
+    .especificacao h2{
+        font-size: var(--fonte-30px);
+        text-transform:uppercase;
+    }
+
+    .especificacao ul{
+        height:inherit;
+        background-image:linear-gradient(var(--cor-gradiente2));
+        border: 1px solid black;
+        font-size:var(--fonte-18px);
+        padding: 2% 0% 2% 4%;
+    }
+
+    .especificacao li{
+        padding: 5px 0;
+    }
+
+    .nomeEpreco button{
+        width: 100%;
+        height: 50px;
+        background-color:var(--cor-azul-Escuro);
+        color:white;
+        font-size:var(--fonte-25px);
+        font-weight:bold;
+        text-transform: uppercase;
+        border-radius: 50px;
+        border:none;
+        margin-top: 20px;
+        cursor: pointer;
+        line-height: 55px;
+    }
+
+    .nomeEpreco button:hover{
+        transform:scale(1.030);
+        border-bottom:5px solid rgb(154, 154, 231);
+    }
+
+    /* .nomeELocalizacao */
+
+    .nomeELocalizacao{
+        width:100%;
+        float: initial;
+        clear: both;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nomeEpreco{
+        width: 49%;
+        height: 100%;
+    }
+
+    .nomeEpreco h2{
+        font-size: var(--fonte-30px);
+        text-transform: uppercase;
+        color:white;
+    }
+
+    .preco{
+        width: 100%;
+        height:130px;
+        background-image:linear-gradient(var(--cor-gradiente2));
+        padding:20px 0px;
+        padding-left: 20px;
+        border: 1px solid black;
+    }
+
+    .preco h3{
+        text-transform:capitalize;
+        padding: 4px 0px;
+        color:white;
+        font-size: var(--fonte-25px);
+    }
+
+    .Localizacao{
+        width: 49%;
+        height: 100%;
+    }
+
+    .Localizacao h2{
+        font-size:var(--fonte-30px);
+        text-transform:uppercase;
+        color:white;
+    }
+
+    .local{
+        width: 100%;
+        height: 130px;
+        background-image:linear-gradient(var(--cor-gradiente2));
+        color:white;
+        padding: 20px 0px;
+        padding-left: 20px;
+        border: 1px solid black;
+    }
+
+    .local h3{
+        text-transform:capitalize;
+        padding: 3px 0;
+        font-size:var(--fonte-25px);
+    }
+
+    .Localizacao button{
+        width: 100%;
+        height: 50px;
+        background-color:var(--cor-azul-Escuro);
+        color:white;
+        font-size:var(--fonte-25px);
+        font-weight:bold;
+        text-transform: uppercase;
+        border-radius: 50px;
+        border:none;
+        margin-top: 20px;
+        cursor: pointer;
+        line-height: 55px;
+    }
+
+    .nomeELocalizacao button:hover{
+        transform: scale(1.1);
+        background-image:linear-gradient(blue,blue);    }
+
+    @media screen and (max-width: 1220px){
+        .Localizacao button{
+            font-size: var(--fonte-20px);
+        }
+
+        .imagemEespecificacao li{
+            font-size: var(--fonte-16px);
+        }
+    }
+
+    @media screen and (max-width: 1100px){
+        .nomeEpreco button{
+            font-size:var(--fonte-18px);
+        }
+    }
+
+    @media screen and (max-width: 1025px){
+
+        .alinhamento h2{
+            font-size: var(--fonte-20px);
+        }
+
+        .alinhamento h3 {
+            font-size: var(--fonte-20px);
+        }
+
+        .preco{
+            height: 120px;
+        }
+
+        .local{
+            height: 120px;
+        }
+
+        .alinhamento button{
+            font-size: var(--fonte-16px);
+        }
+
+        .imagemEespecificacao li{
+            font-size: var(--fonte-14px);
+        }
+    }
+
+    @media screen and (max-width:870px){
+
+        .imagemEespecificacao{
+            width:100%;
+            max-height: 100%;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+    
+        .imagemDestaque{
+            width: 100%;
+            position: relative;
+        }
+    
+        .imagemDestaque img{
+            width: 100%;
+            max-height: auto;
+            position: relative;
+        }
+    
+        .especificacao{
+            width: 100%;
+            margin-top:40px;
+        }
+        
+        .especificacao h2{
+            font-size: var(--fonte-30px);
+            text-transform:uppercase;
+        }
+    
+        .especificacao ul{
+            height:inherit;
+            background-image:linear-gradient(var(--cor-gradiente2));
+            padding: 2% 0% 2% 4%;
+        }
+    
+        .especificacao li{
+            font-size:var(--fonte-20px);
+            padding: 5px 0;
+        }
+    
+        .nomeEpreco button{
+            font-size:var(--fonte-25px);
+        }
+    
+        /* .nomeELocalizacao */
+    
+        .nomeELocalizacao{
+            width:100%;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+    
+        .nomeEpreco{
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    
+        .nomeEpreco h2{
+            font-size: var(--fonte-30px);
+        }
+    
+        .preco{
+            width: 100%;
+            height:130px;
+            border: 1px solid black;
+        }
+    
+        .preco h3{
+            font-size: var(--fonte-25px);
+        }
+    
+        .Localizacao{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    
+        .Localizacao h2{
+            font-size:var(--fonte-30px);
+        }
+    
+        .local{
+            width: 100%;
+        }
+    
+        .local h3{
+            font-size:var(--fonte-25px);
+        }
+    
+        .Localizacao button{
+            font-size:var(--fonte-25px);
+
+        }
+
+    }
+
+    @media screen and (max-width:630px){
+        .especificacao li{
+            font-size:var(--fonte-14px);
+        }
+
+        .nomeEpreco h2{
+            font-size: var(--fonte-25px);
+        }
+
+        .nomeEpreco button{
+            font-size:var(--fonte-18px);
+        }
+
+        .preco h3{
+            font-size: var(--fonte-20px);
+        }
+    
+        .Localizacao{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    
+        .Localizacao h2{
+            font-size:var(--fonte-25px);
+        }
+    
+        .local{
+            width: 100%;
+        }
+    
+        .local h3{
+            font-size:var(--fonte-20px);
+        }
+    
+        .Localizacao button{
+            font-size:var(--fonte-18px);
+        }
+
+    }
+
+}
